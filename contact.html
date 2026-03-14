@@ -78,8 +78,8 @@
                 <!-- FORM -->
                 <div class="col-lg-7" data-animate>
                     <div class="contact-form-wrap">
-                        <h2 id="form-heading" style="font-size:1.6rem; margin-bottom:0.35rem;">Send Us a Message</h2>
-                        <p style="color:var(--text-light); font-size:0.9375rem; margin-bottom:2rem;">Fill out the form
+                        <h2 id="form-heading" class="fs-lg mb-1">Send Us a Message</h2>
+                        <p class="text-light fs-sm mb-4">Fill out the form
                             below and a specialist will be in touch within one business day.</p>
 
                         <form id="contactForm" novalidate>
@@ -92,7 +92,7 @@
                                         <input type="text" class="form-control-s50" id="fullName" name="fullName"
                                             placeholder="Jane Smith" required autocomplete="name">
                                         <span data-error="fullName"
-                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            class="error-message">Please
                                             enter your full name.</span>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                                         <input type="text" class="form-control-s50" id="companyName" name="companyName"
                                             placeholder="Acme Corp" required autocomplete="organization">
                                         <span data-error="companyName"
-                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            class="error-message">Please
                                             enter your company name.</span>
                                     </div>
                                 </div>
@@ -118,7 +118,7 @@
                                         <input type="email" class="form-control-s50" id="email" name="email"
                                             placeholder="jane@company.com" required autocomplete="email">
                                         <span data-error="email"
-                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            class="error-message">Please
                                             enter a valid email address.</span>
                                     </div>
                                 </div>
@@ -148,7 +148,7 @@
                                             <option value="other">Other / General Inquiry</option>
                                         </select>
                                         <span data-error="interest"
-                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            class="error-message">Please
                                             select an option.</span>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@
                                             placeholder="Tell us about your needs, current setup, or any questions you have…"
                                             required rows="5"></textarea>
                                         <span data-error="message"
-                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            class="error-message">Please
                                             enter a message.</span>
                                     </div>
                                 </div>
@@ -171,8 +171,8 @@
                                     <button type="submit" class="form-submit-btn">
                                         Send Message <i class="bi bi-arrow-right ms-1"></i>
                                     </button>
-                                    <p style="font-size:0.8rem; color:var(--text-light); margin-top:0.75rem;">
-                                        <i class="bi bi-lock-fill me-1" style="color:var(--teal);"></i>
+                                    <p class="fs-xs text-light mt-3">
+                                        <i class="bi bi-lock-fill me-1 text-teal"></i>
                                         Your information is never sold or shared with third parties.
                                     </p>
                                 </div>
@@ -222,16 +222,15 @@
                             </div>
                         </div>
 
-                        <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+                        <hr class="contact-card-divider">
 
-                        <div
-                            style="background: rgba(0,180,216,0.1); border: 1px solid rgba(0,180,216,0.2); border-radius: var(--radius-md); padding: 1.25rem;">
+                        <div class="bg-teal-light rounded-4 p-4">
                             <div class="d-flex gap-2 align-items-center mb-2">
-                                <i class="bi bi-clock-fill" style="color:var(--teal);"></i>
-                                <h5 class="text-white" style="margin:0; font-size:0.875rem;">Response Time</h5>
+                                <i class="bi bi-clock-fill text-teal"></i>
+                                <h5 class="text-white m-0 fs-xs">Response Time</h5>
                             </div>
-                            <p style="font-size:0.85rem; margin:0; color:rgba(255,255,255,0.65);">
-                                We typically respond within <strong style="color:rgba(255,255,255,0.9);">1 business
+                            <p class="fs-xs m-0 text-white-65">
+                                We typically respond within <strong class="text-white-90">1 business
                                     day</strong>. For urgent matters, please indicate the priority in your message.
                             </p>
                         </div>
@@ -252,7 +251,7 @@
                             <div class="map-embed-wrap">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13875580.291748749!2d-95.71289!3d37.09024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sus!4v1700000000000"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    width="100%" height="100%" class="border-0" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade" title="Solution50 Location">
                                 </iframe>
                             </div>
@@ -309,39 +308,31 @@
     </section>
 
     <!-- TRUST STRIP -->
-    <section class="section-sm" style="background: var(--off-white); border-top: 1px solid var(--border);">
+    <section class="section-sm bg-off-white border-top">
         <div class="container">
             <div class="row justify-content-center text-center g-4">
                 <div class="col-6 col-md-3" data-animate>
-                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
-                        <i class="bi bi-shield-fill-check" style="font-size:1.75rem; color:var(--teal);"></i>
-                        <span
-                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">CJIS
-                            Compliant</span>
+                    <div class="contact-trust-strip-item">
+                        <i class="bi bi-shield-fill-check"></i>
+                        <span>CJIS Compliant</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-3" data-animate data-delay="100">
-                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
-                        <i class="bi bi-lock-fill" style="font-size:1.75rem; color:var(--teal);"></i>
-                        <span
-                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">PCI
-                            DSS Secure</span>
+                    <div class="contact-trust-strip-item">
+                        <i class="bi bi-lock-fill"></i>
+                        <span>PCI DSS Secure</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-3" data-animate data-delay="200">
-                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
-                        <i class="bi bi-flag-fill" style="font-size:1.75rem; color:var(--teal);"></i>
-                        <span
-                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">US
-                            Registered</span>
+                    <div class="contact-trust-strip-item">
+                        <i class="bi bi-flag-fill"></i>
+                        <span>US Registered</span>
                     </div>
                 </div>
                 <div class="col-6 col-md-3" data-animate data-delay="300">
-                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
-                        <i class="bi bi-patch-check-fill" style="font-size:1.75rem; color:var(--teal);"></i>
-                        <span
-                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">Fiserv
-                            Partner</span>
+                    <div class="contact-trust-strip-item">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <span>Fiserv Partner</span>
                     </div>
                 </div>
             </div>
@@ -376,8 +367,8 @@
 
                 <div class="footer-col">
                     <h5>Support</h5>
-                    <a href="contact.html#privacy">Privacy Policy</a>
-                    <a href="contact.html#terms">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
                     <a href="contact.html">Contact Support</a>
                 </div>
 
@@ -399,7 +390,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© 2024 Solution50. All rights reserved.</p>
+                <p>© 2026 Solution50. All rights reserved.</p>
                 <p class="compliance-note">Solution50 is an Independent Sales Representative for CardConnect, a Fiserv
                     Company.</p>
             </div>

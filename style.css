@@ -462,7 +462,7 @@ p {
     border-radius: 100px;
     padding: 0.35rem 1rem;
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -1486,6 +1486,179 @@ select.form-control-s50 {
 }
 
 /* ============================================================
+   UI UTILITIES
+   ============================================================ */
+.text-teal {
+    color: var(--teal) !important;
+}
+
+.text-navy {
+    color: var(--navy) !important;
+}
+
+.text-white-65 {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.text-white-90 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.text-white-20 {
+    color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.text-white-62 {
+    color: rgba(255, 255, 255, 0.62) !important;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.text-light {
+    color: var(--text-light) !important;
+}
+
+.text-teal-dark {
+    color: var(--teal-dark) !important;
+}
+
+.text-blue {
+    color: var(--blue) !important;
+}
+
+.bg-teal-subtle {
+    background: rgba(0, 180, 216, 0.08) !important;
+    border: 1px solid rgba(0, 180, 216, 0.2) !important;
+}
+
+.badge-s50 {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.d-grid-2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+}
+
+.list-unstyled {
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.bg-navy-light {
+    background: rgba(27, 38, 59, 0.08) !important;
+}
+
+.strip-divider-inline {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.fs-lg {
+    font-size: 1.6rem !important;
+}
+
+.fs-md {
+    font-size: 1.1rem !important;
+}
+
+.fs-sm {
+    font-size: 0.9375rem !important;
+}
+
+.fs-xs {
+    font-size: 0.875rem !important;
+}
+
+.fs-xxs {
+    font-size: 0.8125rem !important;
+}
+
+.fs-tiny {
+    font-size: 0.75rem !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-extrabold {
+    font-weight: 800 !important;
+}
+
+.ls-sm {
+    letter-spacing: 0.02em !important;
+}
+
+.ls-md {
+    letter-spacing: 0.05em !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.bg-teal-light {
+    background: rgba(0, 180, 216, 0.1) !important;
+    border: 1px solid rgba(0, 180, 216, 0.2) !important;
+}
+
+.bg-off-white {
+    background: var(--off-white) !important;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+.error-message {
+    display: none;
+    color: #EF4444;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.contact-card-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+}
+
+.contact-trust-strip-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-trust-strip-item i {
+    font-size: 1.75rem;
+    color: var(--teal);
+}
+
+.contact-trust-strip-item span {
+    font-family: var(--font-display);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* ============================================================
    MAP BLOCK
    ============================================================ */
 .map-block {
@@ -1685,6 +1858,111 @@ a.map-info-value:hover {
 
 .delay-5 {
     animation-delay: 0.5s;
+}
+
+/* ============================================================
+   ABOUT PAGE & QUOTES
+   ============================================================ */
+.about-quote-box {
+    background: var(--navy);
+    border-radius: var(--radius-xl);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-box-accent {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(0, 180, 216, 0.06);
+    pointer-events: none;
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: var(--teal);
+    opacity: 0.4;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.quote-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.65;
+    font-family: var(--font-display);
+    font-weight: 500;
+}
+
+.quote-author {
+    color: var(--teal);
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.pane-link-teal,
+.pane-link-blue {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.pane-link-teal {
+    color: var(--teal);
+}
+
+.pane-link-blue {
+    color: var(--blue);
+}
+
+.pane-link-teal:hover,
+.pane-link-blue:hover {
+    gap: 0.75rem;
+    opacity: 0.8;
+}
+
+.mobile-nav-cta {
+    padding: 0.75rem 1.5rem 0.5rem;
+}
+
+/* ============================================================
+   LEGAL PAGES
+   ============================================================ */
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-mid);
+    line-height: 1.8;
+}
+
+.legal-content h2 {
+    color: var(--navy);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.legal-content p {
+    margin-bottom: 1.25rem;
+}
+
+.last-updated {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 3rem;
 }
 
 /* ============================================================
