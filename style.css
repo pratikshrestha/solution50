@@ -180,6 +180,12 @@ p {
 .navbar-brand img {
     height: 38px;
     width: auto;
+    transition: var(--transition);
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.02);
+    filter: brightness(1.1);
 }
 
 .navbar-nav {
@@ -201,12 +207,14 @@ p {
     border-radius: var(--radius-sm);
     letter-spacing: -0.01em;
     white-space: nowrap;
+    transition: var(--transition);
 }
 
 .navbar-nav .nav-item .nav-link:hover,
 .navbar-nav .nav-item .nav-link.active {
     color: var(--navy);
     background: var(--off-white);
+    transform: translateY(-1px);
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -281,7 +289,15 @@ p {
     white-space: nowrap;
 }
 
-.mobile-nav a..btn-primary-s50:hover {
+.btn-primary-s50:hover {
+    background: var(--teal-dark);
+    border-color: var(--teal-dark);
+    color: var(--white);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.35);
+}
+
+.mobile-nav a.btn-primary-s50:hover {
     background: var(--teal-dark);
     border-color: var(--teal-dark);
     color: var(--white);
@@ -312,8 +328,8 @@ p {
 .btn-secondary-s50:hover {
     background: var(--navy);
     color: var(--white);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(27, 38, 59, 0.2);
 }
 
 .btn-outline-white {
@@ -335,9 +351,10 @@ p {
 }
 
 .btn-outline-white:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
     border-color: var(--white);
     color: var(--white);
+    transform: translateY(-2px) scale(1.02);
 }
 
 .btn-sm {
@@ -469,6 +486,14 @@ p {
     color: var(--teal);
     margin-bottom: 1.5rem;
     width: fit-content;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.hero-main .hero-badge:hover {
+    background: rgba(0, 180, 216, 0.18);
+    border-color: rgba(0, 180, 216, 0.4);
+    transform: translateY(-1px);
 }
 
 .hero-main h1 {
@@ -564,9 +589,15 @@ p {
 }
 
 .s50-card:hover {
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(0, 180, 216, 0.2);
-    transform: translateY(-3px);
+    box-shadow: 0 20px 50px rgba(0, 180, 216, 0.1);
+    border-color: rgba(0, 180, 216, 0.25);
+    transform: translateY(-6px);
+}
+
+.s50-card:hover .card-icon {
+    transform: scale(1.1);
+    background: var(--teal);
+    color: var(--white);
 }
 
 .s50-card-dark {
@@ -578,9 +609,13 @@ p {
 }
 
 .s50-card-dark:hover {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(0, 180, 216, 0.3);
-    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(0, 180, 216, 0.4);
+    transform: translateY(-4px);
+}
+
+.s50-card-dark:hover .card-icon {
+    transform: scale(1.1);
 }
 
 .card-icon {
@@ -595,6 +630,7 @@ p {
     font-size: 1.375rem;
     margin-bottom: 1.25rem;
     flex-shrink: 0;
+    transition: var(--transition);
 }
 
 .card-icon-navy {
@@ -624,6 +660,12 @@ p {
     border-radius: var(--radius-xl);
     overflow: hidden;
     position: relative;
+    transition: var(--transition-slow);
+}
+
+.pillar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
 .pillar-card-bio {
@@ -729,6 +771,17 @@ p {
     align-items: flex-start;
 }
 
+.why-point:hover .why-point-icon {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.why-point:hover .why-point-body h4 {
+    color: var(--teal);
+}
+
 .why-point-icon {
     width: 52px;
     height: 52px;
@@ -742,6 +795,7 @@ p {
     color: var(--teal);
     flex-shrink: 0;
     box-shadow: var(--shadow-sm);
+    transition: var(--transition);
 }
 
 .why-point-body h4 {
@@ -1155,8 +1209,15 @@ select.form-control-s50 {
 }
 
 .value-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+    border-color: rgba(0, 180, 216, 0.2);
+}
+
+.value-card:hover .value-icon {
+    transform: scale(1.1);
+    background: var(--teal);
+    color: var(--white);
 }
 
 .value-icon {
@@ -1170,6 +1231,7 @@ select.form-control-s50 {
     justify-content: center;
     font-size: 1.2rem;
     flex-shrink: 0;
+    transition: var(--transition);
 }
 
 .value-card h4 {
@@ -1197,10 +1259,23 @@ select.form-control-s50 {
 .ecosystem-pane {
     padding: 3rem;
     background: var(--white);
+    transition: var(--transition);
+    position: relative;
+}
+
+.ecosystem-pane:hover {
+    background: #fcfdfe;
+    transform: scale(1.01);
+    z-index: 2;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
 .ecosystem-pane.dark {
     background: var(--navy);
+}
+
+.ecosystem-pane.dark:hover {
+    background: #202b40;
 }
 
 .ecosystem-pane.dark h3 {
