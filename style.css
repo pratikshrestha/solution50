@@ -523,7 +523,7 @@ p {
     border: 1px solid rgba(0, 180, 216, 0.2);
     color: var(--teal);
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
