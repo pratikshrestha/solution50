@@ -490,9 +490,10 @@ p {
 
 .hero-inner {
     background: var(--navy);
-    padding: var(--space-xl) 0;
+    padding: var(--space-lg) 0;
     position: relative;
     overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .hero-inner::before {
@@ -505,7 +506,8 @@ p {
 
 .hero-inner h1 {
     color: var(--white);
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    line-height: 1.2;
 }
 
 .hero-inner .eyebrow {
@@ -537,6 +539,14 @@ p {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+/* Reduced size hero visuals for inner pages */
+.hero-inner .hero-visual-img {
+    width: 100%;
+    transform: translateX(0);
+    mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 70%);
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 70%);
 }
 
 /* ============================================================
