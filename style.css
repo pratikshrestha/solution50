@@ -1173,6 +1173,46 @@ select.form-control-s50 {
 }
 
 /* ============================================================
+   PARTNER STRIP
+   ============================================================ */
+.partner-strip {
+    background: var(--silver);
+    padding: var(--space-xl) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.partner-logos-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.partner-logos-wrap:hover {
+    opacity: 0.9;
+}
+
+.partner-logos-img {
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .partner-strip {
+        text-align: center;
+        padding: var(--space-lg) 0;
+    }
+    
+    .partner-logos-wrap {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .s50-footer {
