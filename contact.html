@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Solution50</title>
+    <meta name="description"
+        content="Get in touch with Solution50. Request a demo, get a quote, or speak with a specialist about biometric fingerprinting systems or merchant payment processing.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css?v=1.1" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="s50-navbar" role="banner">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Solution50 Home">
+                <img src="logo.webp" alt="Solution50" width="180" height="38">
+            </a>
+            <nav class="navbar-nav" aria-label="Primary navigation">
+                <div class="nav-item"><a class="nav-link" href="index.html">Home</a></div>
+                <div class="nav-item"><a class="nav-link" href="biometric-solutions.html">Biometric Solutions</a></div>
+                <div class="nav-item"><a class="nav-link" href="merchant-services.html">Merchant Services</a></div>
+                <div class="nav-item"><a class="nav-link" href="about.html">About Us</a></div>
+                <div class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></div>
+            </nav>
+            <div class="navbar-cta d-none d-lg-block">
+                <a href="#contact-form" class="btn-primary-s50 btn-sm">Send Message</a>
+            </div>
+            <button class="navbar-toggler" id="navToggler" aria-expanded="false" aria-label="Toggle menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <div class="container">
+                <a href="index.html">Home</a>
+                <a href="biometric-solutions.html">Biometric Solutions</a>
+                <a href="merchant-services.html">Merchant Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-inner" aria-labelledby="contact-hero-heading">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-tag">Get in Touch</div>
+                    <span class="eyebrow">We're ready to help your business grow.</span>
+                    <h1 id="contact-hero-heading">Let's Start a Conversation.</h1>
+                    <p class="mt-3">
+                        Whether you're interested in biometric fingerprinting systems, merchant payment processing, or
+                        exploring a partnership — our team responds promptly with real answers, not auto-replies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact-form" aria-labelledby="form-heading">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- FORM -->
+                <div class="col-lg-7" data-animate>
+                    <div class="contact-form-wrap">
+                        <h2 id="form-heading" style="font-size:1.6rem; margin-bottom:0.35rem;">Send Us a Message</h2>
+                        <p style="color:var(--text-light); font-size:0.9375rem; margin-bottom:2rem;">Fill out the form
+                            below and a specialist will be in touch within one business day.</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="fullName">
+                                            Full Name <span class="form-required">*</span>
+                                        </label>
+                                        <input type="text" class="form-control-s50" id="fullName" name="fullName"
+                                            placeholder="Jane Smith" required autocomplete="name">
+                                        <span data-error="fullName"
+                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            enter your full name.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="companyName">
+                                            Company Name <span class="form-required">*</span>
+                                        </label>
+                                        <input type="text" class="form-control-s50" id="companyName" name="companyName"
+                                            placeholder="Acme Corp" required autocomplete="organization">
+                                        <span data-error="companyName"
+                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            enter your company name.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">
+                                            Email Address <span class="form-required">*</span>
+                                        </label>
+                                        <input type="email" class="form-control-s50" id="email" name="email"
+                                            placeholder="jane@company.com" required autocomplete="email">
+                                        <span data-error="email"
+                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            enter a valid email address.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone">
+                                            Phone Number
+                                        </label>
+                                        <input type="tel" class="form-control-s50" id="phone" name="phone"
+                                            placeholder="+1 (555) 000-0000" autocomplete="tel">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="interest">
+                                            I am interested in… <span class="form-required">*</span>
+                                        </label>
+                                        <select class="form-control-s50" id="interest" name="interest" required>
+                                            <option value="" disabled selected>Select a service area</option>
+                                            <option value="biometric">Biometric Fingerprinting Systems (EFT/FD-258)
+                                            </option>
+                                            <option value="merchant">Merchant Processing &amp; Banking (CardConnect)
+                                            </option>
+                                            <option value="partnership">Partnership Opportunities</option>
+                                            <option value="other">Other / General Inquiry</option>
+                                        </select>
+                                        <span data-error="interest"
+                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            select an option.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="message">
+                                            Message <span class="form-required">*</span>
+                                        </label>
+                                        <textarea class="form-control-s50" id="message" name="message"
+                                            placeholder="Tell us about your needs, current setup, or any questions you have…"
+                                            required rows="5"></textarea>
+                                        <span data-error="message"
+                                            style="display:none; color:#EF4444; font-size:0.8rem; margin-top:0.25rem;">Please
+                                            enter a message.</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="form-submit-btn">
+                                        Send Message <i class="bi bi-arrow-right ms-1"></i>
+                                    </button>
+                                    <p style="font-size:0.8rem; color:var(--text-light); margin-top:0.75rem;">
+                                        <i class="bi bi-lock-fill me-1" style="color:var(--teal);"></i>
+                                        Your information is never sold or shared with third parties.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="col-lg-5" data-animate data-delay="150">
+                    <div class="contact-info-card">
+                        <h3>How Can We Help?</h3>
+
+                        <div class="contact-info-item">
+                            <i class="bi bi-fingerprint"></i>
+                            <div>
+                                <h5>Biometric Solutions</h5>
+                                <p>Questions about EFT file generation, FD-258 printing, demo requests, or hardware
+                                    kits.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="bi bi-credit-card-2-front-fill"></i>
+                            <div>
+                                <h5>Merchant Services</h5>
+                                <p>Free rate analysis, CardConnect onboarding, hardware quotes, and account questions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="bi bi-handshake-fill"></i>
+                            <div>
+                                <h5>Partnerships</h5>
+                                <p>Reseller programs, referral partnerships, and integration opportunities with
+                                    Solution50.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="bi bi-headset"></i>
+                            <div>
+                                <h5>Technical Support</h5>
+                                <p>Existing customers can reach our support team directly for troubleshooting and
+                                    account management.</p>
+                            </div>
+                        </div>
+
+                        <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+                        <div
+                            style="background: rgba(0,180,216,0.1); border: 1px solid rgba(0,180,216,0.2); border-radius: var(--radius-md); padding: 1.25rem;">
+                            <div class="d-flex gap-2 align-items-center mb-2">
+                                <i class="bi bi-clock-fill" style="color:var(--teal);"></i>
+                                <h5 class="text-white" style="margin:0; font-size:0.875rem;">Response Time</h5>
+                            </div>
+                            <p style="font-size:0.85rem; margin:0; color:rgba(255,255,255,0.65);">
+                                We typically respond within <strong style="color:rgba(255,255,255,0.9);">1 business
+                                    day</strong>. For urgent matters, please indicate the priority in your message.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Map placeholder -->
+                    <div class="map-placeholder" role="img" aria-label="Office location map placeholder">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>United States of America</span>
+                        <span style="font-size:0.8rem; color:var(--text-light);">Map integration available on
+                            request</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="section-sm" style="background: var(--off-white); border-top: 1px solid var(--border);">
+        <div class="container">
+            <div class="row justify-content-center text-center g-4">
+                <div class="col-6 col-md-3" data-animate>
+                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+                        <i class="bi bi-shield-fill-check" style="font-size:1.75rem; color:var(--teal);"></i>
+                        <span
+                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">CJIS
+                            Compliant</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-animate data-delay="100">
+                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+                        <i class="bi bi-lock-fill" style="font-size:1.75rem; color:var(--teal);"></i>
+                        <span
+                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">PCI
+                            DSS Secure</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-animate data-delay="200">
+                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+                        <i class="bi bi-flag-fill" style="font-size:1.75rem; color:var(--teal);"></i>
+                        <span
+                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">US
+                            Registered</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-animate data-delay="300">
+                    <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+                        <i class="bi bi-patch-check-fill" style="font-size:1.75rem; color:var(--teal);"></i>
+                        <span
+                            style="font-family:var(--font-display); font-size:0.8125rem; font-weight:700; color:var(--navy); letter-spacing:0.05em;">Fiserv
+                            Partner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="s50-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html"><img src="logo.webp" alt="Solution50" width="160" height="34"></a>
+                    <p class="mt-3">Specialized infrastructure for modern business. FBI-compliant biometric systems and
+                        enterprise-grade payment processing powered by Fiserv.</p>
+                    <p class="mt-2" style="font-size:0.75rem; color: rgba(255,255,255,0.3); font-style: italic;">
+                        Solution50 Registered in the United States</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="biometric-solutions.html">Biometric Solutions</a>
+                    <a href="merchant-services.html">Merchant Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Solution50. All rights reserved.</p>
+                <p class="compliance-note">Solution50 is an Independent Sales Representative for CardConnect, a Fiserv
+                    Company.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Pre-select dropdown if URL has ?interest= param
+        const params = new URLSearchParams(window.location.search);
+        const interest = params.get('interest');
+        if (interest) {
+            const sel = document.getElementById('interest');
+            if (sel) sel.value = interest;
+        }
+    </script>
+</body>
+
+</html>
