@@ -243,8 +243,45 @@ p {
     background: rgba(255, 255, 255, 0.99);
 }
 
+.s50-topbar {
+    background: var(--navy);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.45rem 0;
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
 .s50-header.scrolled .s50-topbar {
-    display: none;
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+/* Same fix for announce bar */
+.s50-announce {
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.25s ease;
+    opacity: 1;
+}
+
+.s50-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    will-change: transform;
+}
+
+.s50-navbar {
+    will-change: box-shadow;
+}
+
+.s50-header.scrolled .s50-announce {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
 }
 
 .s50-navbar .container {

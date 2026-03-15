@@ -35,6 +35,21 @@
         });
     }
 
+    /* ── Header scroll state ── */
+    const header = document.querySelector('.s50-header');
+    if (header) {
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    header.classList.toggle('scrolled', window.scrollY > 60);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    }
+
     /* ── Active nav link handling ── */
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
