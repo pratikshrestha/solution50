@@ -14,46 +14,128 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="s50-navbar" role="banner">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" aria-label="Solution50 Home">
-                <img src="assets/img/logo.webp" alt="Solution50" width="180" height="38">
-            </a>
-            <nav class="navbar-nav" aria-label="Primary navigation">
-                <div class="nav-item"><a class="nav-link" href="index.html">Home</a></div>
-                <div class="nav-item has-dropdown">
-                    <a class="nav-link" href="biometric-solutions.html">Solutions</a>
-                    <div class="dropdown-menu-s50">
-                        <a href="biometric-solutions.html" class="dropdown-item-s50">Biometric System</a>
-                        <a href="merchant-services.html" class="dropdown-item-s50">Merchant Services</a>
+    <header class="s50-header" role="banner">
+
+        <!-- Top utility bar -->
+        <div class="s50-topbar">
+            <div class="container">
+                <div class="topbar-inner">
+                    <div class="topbar-left">
+                        <span><i class="bi bi-shield-fill-check"></i> FBI CJIS Compliant</span>
+                        <span class="topbar-divider"></span>
+                        <span><i class="bi bi-lock-fill"></i> PCI DSS Secure</span>
+                        <span class="topbar-divider"></span>
+                        <span><i class="bi bi-flag-fill"></i> US Registered</span>
+                    </div>
+                    <div class="topbar-right">
+                        <a href="mailto:info@solution50.com">
+                            <i class="bi bi-envelope"></i> info@solution50.com
+                        </a>
                     </div>
                 </div>
-                <div class="nav-item"><a class="nav-link" href="about.html">About Us</a></div>
-                <div class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></div>
-            </nav>
-            <div class="navbar-cta d-none d-lg-block">
-                <a href="contact.html" class="btn-primary-s50 btn-sm">Get Started</a>
             </div>
-            <button class="navbar-toggler" id="navToggler" aria-expanded="false" aria-label="Toggle menu">
-                <i class="bi bi-list"></i>
-            </button>
         </div>
-        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+
+        <!-- Main navbar -->
+        <nav class="s50-navbar" aria-label="Primary navigation">
             <div class="container">
-                <a href="index.html">Home</a>
-                <div class="mobile-nav-group">
-                    <div class="mobile-nav-header">Solutions</div>
-                    <a href="biometric-solutions.html" class="mobile-sub-link">Biometric Identity</a>
-                    <a href="merchant-services.html" class="mobile-sub-link">Merchant Services</a>
-                </div>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <div class="mobile-nav-cta">
-                    <a href="contact.html" class="btn-primary-s50 btn-sm">Get Started</a>
-                </div>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html" aria-label="Solution50 Home">
+                    <img src="assets/img/logo.webp" alt="Solution50" width="160" height="34">
+                </a>
+
+                <!-- Desktop nav links -->
+                <ul class="nav-links" role="list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+
+                    <!-- Solutions dropdown -->
+                    <li class="nav-has-dropdown">
+                        <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                            Solutions <i class="bi bi-chevron-down nav-chevron"></i>
+                        </button>
+                        <div class="nav-dropdown" role="region">
+                            <a href="biometric-solutions.html" class="nav-dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <i class="bi bi-fingerprint"></i>
+                                </div>
+                                <div class="dropdown-item-body">
+                                    <span class="dropdown-item-title">Biometric System</span>
+                                    <span class="dropdown-item-desc">FBI-compliant EFT & FD-258 printing</span>
+                                </div>
+                            </a>
+                            <a href="merchant-services.html" class="nav-dropdown-item">
+                                <div class="dropdown-item-icon">
+                                    <i class="bi bi-credit-card-2-front"></i>
+                                </div>
+                                <div class="dropdown-item-body">
+                                    <span class="dropdown-item-title">Merchant Services</span>
+                                    <span class="dropdown-item-desc">CardConnect payments via Fiserv</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+
+                <!-- Desktop CTA -->
+                <a href="contact.html" class="nav-cta">
+                    Get Started <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <!-- Mobile toggle -->
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open menu">
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                </button>
+
             </div>
         </nav>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <div class="mobile-menu-inner">
+
+                <div class="mobile-nav-group">
+                    <span class="mobile-nav-label">Navigate</span>
+                    <a href="index.html" class="mobile-nav-link">
+                        <i class="bi bi-house-fill"></i> Home
+                    </a>
+                    <a href="about.html" class="mobile-nav-link">
+                        <i class="bi bi-building"></i> About Us
+                    </a>
+                    <a href="contact.html" class="mobile-nav-link">
+                        <i class="bi bi-envelope"></i> Contact Us
+                    </a>
+                </div>
+
+                <div class="mobile-nav-group">
+                    <span class="mobile-nav-label">Solutions</span>
+                    <a href="biometric-solutions.html" class="mobile-nav-link">
+                        <i class="bi bi-fingerprint"></i> Biometric System
+                        <span class="mobile-nav-badge">EFT · FD-258</span>
+                    </a>
+                    <a href="merchant-services.html" class="mobile-nav-link">
+                        <i class="bi bi-credit-card-2-front"></i> Merchant Services
+                        <span class="mobile-nav-badge">Fiserv · CardConnect</span>
+                    </a>
+                </div>
+
+                <div class="mobile-menu-cta">
+                    <a href="contact.html" class="mobile-cta-btn">
+                        Get Started <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="mailto:info@solution50.com" class="mobile-contact-link">
+                        <i class="bi bi-envelope"></i> info@solution50.com
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
     </header>
 
     <!-- HERO -->
