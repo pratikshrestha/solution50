@@ -206,7 +206,21 @@ p {
     padding: 0 !important;
 }
 
-.topbar-right a {
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.topbar-contact {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.topbar-contact a {
     font-family: var(--font-display);
     font-size: 0.7rem;
     font-weight: 700;
@@ -219,11 +233,30 @@ p {
     transition: var(--transition);
 }
 
-.topbar-right a i {
+.topbar-contact a i {
     color: var(--teal);
 }
 
-.topbar-right a:hover {
+.topbar-contact a:hover {
+    color: var(--teal);
+}
+
+.topbar-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.topbar-socials a {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-socials a:hover {
     color: var(--teal);
 }
 
@@ -1285,7 +1318,7 @@ p {
 .db-content p {
     color: rgba(255, 255, 255, 0.5);
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.4;
 }
 
@@ -1533,21 +1566,25 @@ p {
 }
 
 .pillar-card-pay {
-    background: linear-gradient(135deg, #f8f9fa 0%, #EEF2F7 100%);
-    border: 1px solid var(--border);
+    background: var(--teal);
     padding: 3rem;
+    border: none;
+}
+
+.pillar-card-pay .pillar-feature i {
+    color: inherit;
 }
 
 .pillar-card-pay h3 {
-    color: var(--navy);
+    color: var(--white);
 }
 
 .pillar-card-pay p {
-    color: var(--text-mid);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .pillar-card-pay .eyebrow {
-    color: var(--blue);
+    color: var(--white);
 }
 
 .pillar-tag {
@@ -1570,8 +1607,8 @@ p {
 }
 
 .pillar-tag-pay {
-    background: rgba(27, 38, 59, 0.07);
-    color: var(--blue);
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
 }
 
 .pillar-card h3 {
@@ -1607,7 +1644,7 @@ p {
 }
 
 .pillar-card-pay .pillar-feature {
-    color: var(--text-mid);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .pillar-feature i {
