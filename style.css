@@ -1134,7 +1134,7 @@ p {
     font-size: clamp(2.4rem, 5vw, 3.8rem);
     letter-spacing: -0.035em;
     line-height: 1.1;
-    margin-bottom: 1.5rem !important;
+    /* margin-bottom: 1.5rem !important; */
 }
 
 .hero-secondary::before {
@@ -1276,9 +1276,8 @@ p {
     flex-grow: 1;
 }
 
-.db-content h4 {
-    color: white;
-    margin: 0;
+.db-content h2 {
+    margin: 0 0 0.5rem 0;
     font-size: 1.15rem;
     font-weight: 600;
 }
